@@ -341,5 +341,9 @@ footer {
     padding: 10px 12px;
     margin-top: 8px;
     margin-right: -10px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-nav > li > a {
+    padding-left: 0.4em;
+    padding-right: 0.4em; } }
 
 /*# sourceMappingURL=style.css.map */
