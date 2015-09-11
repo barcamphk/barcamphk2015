@@ -1,7 +1,7 @@
 .browserupgrade {
   margin: 0.2em 0;
   background: #ffecb3;
-  color: #000;
+  color: #333;
   padding: 0.2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -232,10 +232,13 @@ footer {
   padding: 0.8em 1em 1em;
   margin-bottom: 2em;
   border: 1px solid #f7f7f7; }
+
 #sponsors h3 {
   font-size: 1em; }
+
 #sponsors .card-content {
   padding: 1em 0; }
+
 #sponsors .sponsor {
   margin-right: 1.8em; }
   #sponsors .sponsor:last-child {
@@ -244,38 +247,41 @@ footer {
 #organizers .vcard {
   overflow: hidden;
   margin-bottom: 1em; }
+
 #organizers .avatar {
   max-width: 88px;
   margin-right: 3em; }
+
 #organizers .fn {
   display: block;
   font-size: 1.4em;
   margin-top: 0.8em; }
+
 #organizers .nickname:before {
   content: "@"; }
 
 @media (max-width: 450px) {
   #logo-main {
     max-width: 100%; } }
+
 @media (max-width: 540px) {
   .vcard {
     width: 100%; } }
+
 @media (max-width: 768px) {
   .col-figure {
     text-align: right; }
     .col-figure img {
       max-width: calc(100% + 15px * 2);
       margin-left: -15px; }
-
   .img-responsive-caption {
     opacity: 0.8;
     display: inline-block;
     margin-right: -18px;
-    transform: translateY(-48px); }
-
+    -webkit-transform: translateY(-48px);
+            transform: translateY(-48px); }
   .col-content {
     margin-top: -1em; }
-
   .compat #event-info .row {
     position: relative; }
   .compat #event-info .col-content {
@@ -284,9 +290,10 @@ footer {
     left: 20px;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 0.8em; }
-
   #site {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease; }
     #site .navbar {
       position: fixed;
@@ -327,23 +334,22 @@ footer {
       #site #action-nav a {
         margin-top: -2px; }
     #site:target {
-      transform: translateX(-280px); } }
+      -webkit-transform: translateX(-280px);
+              transform: translateX(-280px); } }
+
 @media (min-width: 768px) {
   .navbar-collapse {
     text-align: center; }
-
   .navbar-nav {
     float: none;
     margin: 0 auto;
     display: inline-block; }
-
   .navbar-nav > li > a.btn {
     padding: 10px 12px;
     margin-top: 8px;
     margin-right: -10px; } }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-nav > li > a {
     padding-left: 0.4em;
     padding-right: 0.4em; } }
-
-/*# sourceMappingURL=style.css.map */

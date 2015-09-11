@@ -3,6 +3,12 @@ $('.navbar').affix({
       top: $('.navbar').offset().top - 50
     }
 });
+// $('.navbar-toggle').click(function(){
+//
+//   console.log("clicked");
+//
+// })
+
 $(".share-btn").each(function() {
   var el = $(this);
   var url = el.attr("href")
