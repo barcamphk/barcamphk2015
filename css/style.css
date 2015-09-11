@@ -230,7 +230,8 @@ footer {
   background: #fff;
   box-shadow: 1px 1px rgba(17, 17, 17, 0.1);
   padding: 0.8em 1em 1em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  border: 1px solid #f7f7f7; }
 #sponsors h3 {
   font-size: 1em; }
 #sponsors .card-content {
@@ -256,6 +257,9 @@ footer {
 @media (max-width: 450px) {
   #logo-main {
     max-width: 100%; } }
+@media (max-width: 540px) {
+  .vcard {
+    width: 100%; } }
 @media (max-width: 768px) {
   .col-figure {
     text-align: right; }

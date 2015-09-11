@@ -1,5 +1,8 @@
 // Bootstrap loaded from cdn.
 //
+//The Mixin
+
+//h5nbp
 .browserupgrade {
     margin: 0.2em 0;
     background: #ffecb3;
@@ -289,6 +292,7 @@ footer {
     box-shadow: 1px 1px rgba(#111, 0.1);
     padding: 0.8em 1em 1em;
     margin-bottom: 2em;
+    border: 1px solid #f7f7f7;
   }
   h3 {
     font-size: 1em
@@ -330,6 +334,11 @@ footer {
       max-width: 100%;
   }
 }
+@media (max-width: 540px) {
+  .vcard {
+      width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .col-figure {
     text-align: right;
@@ -363,6 +372,12 @@ footer {
     }
   }
 
+  #sponsors {
+    //need to do something for mobile version
+    .card {
+
+    }
+  }
   // off-canvas menu
   #site {
     transform: translateX(0px);
