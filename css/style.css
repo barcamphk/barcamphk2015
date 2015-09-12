@@ -21,7 +21,7 @@ body {
   background: #fff; }
   @media (min-width: 768px) {
     #site {
-      background: url("/images/white-bg.jpg"); } }
+      background: #fff url("/images/white-bg.jpg"); } }
   #site h2 {
     text-align: center; }
     @media (min-width: 768px) {
@@ -157,17 +157,19 @@ footer {
     line-height: 1.4; }
     #landing h2 time {
       color: rgba(255, 255, 255, 0.5); }
-  #landing .event-header {
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.02) 2%, rgba(0, 0, 0, 0.8) 100%), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/65989/Barcamp2014Photo.jpg) center;
-    background-size: auto, cover;
-    /* min-height: 450px; */
-    margin-bottom: -1em; }
-    #landing .event-header h1 {
-      margin-top: 100px;
-      margin-bottom: 1em; }
-  #landing .event-details {
-    background-color: #D92C30;
-    padding: 2.5em 0 2em; }
+
+.event-header {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.02) 2%, rgba(0, 0, 0, 0.8) 100%), url("/images/header-photo-sm.jpg") center 67%;
+  background-size: auto, cover;
+  /* min-height: 450px; */
+  margin-bottom: -1em; }
+  .event-header h1 {
+    margin-top: 100px;
+    margin-bottom: 1em; }
+
+.event-details {
+  background-color: #D92C30;
+  padding: 2.5em 0 2em; }
 
 #logo-main {
   max-width: 420px; }
@@ -347,7 +349,13 @@ footer {
   .navbar-nav > li > a.btn {
     padding: 10px 12px;
     margin-top: 8px;
-    margin-right: -10px; } }
+    margin-right: -10px; }
+  .event-header {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.02) 2%, rgba(0, 0, 0, 0.95) 100%), url("/images/header-photo-md.jpg"); } }
+
+@media (min-width: 1152px) {
+  .event-header {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.02) 2%, rgba(0, 0, 0, 0.87) 100%), url("/images/header-photo-lg.jpg"); } }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-nav > li > a {

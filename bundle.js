@@ -45,13 +45,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// CSS
-	__webpack_require__(2)
+	__webpack_require__(1)
 	// Any JS file do require...
 
 
 /***/ },
-/* 1 */,
-/* 2 */
+/* 1 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
