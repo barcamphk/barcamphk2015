@@ -116,9 +116,12 @@ footer {
 // affix
 .affix {
   width: 100%;
+  #action-nav {
+    display: inline-block;
+  }
   .navbar-brand, .btn-action {
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease 0.1s;
   }
 }
 
@@ -129,6 +132,10 @@ footer {
 .navbar-toggle {
   margin-right: 0;
 }
+
+  #main-navbar {
+    max-height: 56px;
+  }
   #main-nav {
     display:inline-block;
     font-size: 1.2em;
@@ -380,12 +387,40 @@ footer {
 
     }
   }
+
+  #main-navbar {
+    background: transparent;
+    .navbar-header {
+      opacity: 0
+    }
+  }
+
+  .navbar.navbar-fixed-top {
+    z-index: 10000;
+    #action-nav {
+      display:block;
+    }
+    .navbar-brand, .btn-action {
+      opacity: 1;
+    }
+    .navbar-toggle {
+      &:focus {
+        box-shadow: 0 0 5px #ffecb3;
+      }
+      &:active {
+        background: #f5f5f5;
+      }
+    }
+  }
+
+
+
   // off-canvas menu
   #site {
     transform: translateX(0px);
     transition: transform 0.5s ease;
     .navbar {
-      position: fixed;
+      position:fixed;
       top: 0;
       width: 100%;
     }
@@ -401,7 +436,7 @@ footer {
     #navbar-collapse {
       position: absolute;
       height: 100%;
-      right: -280px;
+      right: -282px;
       padding: 0 0 15px 0px;
       width: 280px;
       ul {
@@ -409,9 +444,9 @@ footer {
       }
     }
 
-    #main-nav {
-      width: 100%;
-    }
+      #main-nav {
+        width: 100%;
+      }
 
       #navbar-collapse {
         li>a:focus, li>a:hover, li>a:active {
@@ -430,14 +465,13 @@ footer {
         }
       }
       #action-nav {
-        position: absolute;
-        top: -50px;
-        width: 100%;
+        display: block;
         a {
-          margin-top:-2px;
+          margin-top: 2px;
+          margin-bottom: 2px;
+
         }
       }
-
 
 
     &:target {
@@ -463,13 +497,25 @@ footer {
       margin-right: -10px;
   }
   .event-header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 2%,rgba(0,0,0,0.95) 100%), url('/images/header-photo-md.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 2%,rgba(0,0,0,0.92) 100%), url('/images/header-photo-md.jpg');
 
+  }
+  // #action-nav {
+  //   display: none;
+  //   .affix &, .affix-top & {
+  //     display:inline-block;
+  //   }
+  // }
+  #main-navbar {
+    background: #fff;
+    .navbar-header {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1152px) {
   .event-header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 2%,rgba(0,0,0,0.87) 100%), url('/images/header-photo-lg.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 2%,rgba(0,0,0,0.85) 100%), url('/images/header-photo-lg.jpg');
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {

@@ -1,7 +1,7 @@
 $(function(){
-  $('.navbar').affix({
+  $('#main-navbar').affix({
       offset: {
-        top: $('.navbar').offset().top - 50
+        top: $('#main-navbar').offset().top - 50
       }
   });
 
