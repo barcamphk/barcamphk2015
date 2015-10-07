@@ -339,9 +339,18 @@ footer {
     padding: 0.8em 1em 1em;
     margin-bottom: 2em;
     border: 1px solid #f7f7f7;
+    &.caller {
+      background: gold;
+      box-shadow: none;
+      border: none;
+      color: #333;
+      font-weight: 600;
+      padding-left: 10px;
+    }
   }
   h3 {
-    font-size: 1em
+    font-size: 1em;
+    margin-top: 0.2em;
   }
   .card-content {
     padding: 1em 0;
@@ -351,6 +360,15 @@ footer {
     &:last-child {
       margin-right: 0;
     }
+  }
+  .sponsor-logo {
+    width: 180px;
+  }
+  .fa-lightbulb-o {
+    color: #F9A600;
+    font-weight: 400;
+    font-size: 1.6em;
+    vertical-align: middle;
   }
 }
 
