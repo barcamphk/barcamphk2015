@@ -8,6 +8,8 @@ $(function(){
   // $('.navbar-toggle').click(function(){
   // })
 
+  document.addEventListener("touchstart", function(){ return true; }, true);
+
   $(".share-btn").each(function() {
     var el = $(this);
     var url = el.attr("href")
@@ -306,7 +308,7 @@ $(function(){
       script.type = 'text/javascript';
       script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDEhvq_HGdiQMpolPekgKm8QhVfctKoTXg&sensor=false&callback=init';
       document.body.appendChild(script);
-    
+
     }
 
   })

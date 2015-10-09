@@ -164,6 +164,9 @@ footer {
     #landing .highlights time {
       color: rgba(255, 255, 255, 0.5); }
 
+.event-header, .event-details {
+  overflow: hidden; }
+
 .event-header {
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.02) 2%, rgba(0, 0, 0, 0.8) 100%), url("/images/header-photo-sm.jpg") center 67%;
   background-size: auto, cover;
