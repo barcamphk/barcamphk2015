@@ -305,6 +305,13 @@ footer {
   h5 {
     text-decoration: underline;
   }
+
+  mark {
+    padding: 0 0.2em;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #FFD600;
+  }
 }
 #schedule {
   font-size: 1.2em;

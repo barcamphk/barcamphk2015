@@ -236,6 +236,11 @@ footer {
     margin: 0.4em 0; }
   #transport h5 {
     text-decoration: underline; }
+  #transport mark {
+    padding: 0 0.2em;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #FFD600; }
 
 #schedule {
   font-size: 1.2em; }
