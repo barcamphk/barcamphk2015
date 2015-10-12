@@ -203,8 +203,9 @@ footer {
     font-size: 1.6em;
     margin-bottom: 1.8em;
     line-height: 1.4;
-    time {
+    em, time {
       color: rgba(#fff,0.5);
+      font-style: normal;
     }
   }
 

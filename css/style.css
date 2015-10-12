@@ -161,8 +161,9 @@ footer {
     font-size: 1.6em;
     margin-bottom: 1.8em;
     line-height: 1.4; }
-    #landing .highlights time {
-      color: rgba(255, 255, 255, 0.5); }
+    #landing .highlights em, #landing .highlights time {
+      color: rgba(255, 255, 255, 0.5);
+      font-style: normal; }
 
 .event-header, .event-details {
   overflow: hidden; }
