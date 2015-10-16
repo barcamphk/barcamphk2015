@@ -404,12 +404,14 @@ footer {
   }
   .sponsor {
     margin-right: 1.8em;
+    display:inline-block;
     &:last-child {
       margin-right: 0;
     }
   }
   .sponsor-logo {
-    width: 180px;
+    max-width: 200px;
+    max-height: 100px;
   }
   .fa-lightbulb-o {
     color: #F9A600;
